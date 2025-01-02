@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "ed92a661-a92f-4a8c-9141-3065d1939e5b",
+		"name": "K12-Chatbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30287875",
+		"_collection_link": "https://lunar-comet-294720.postman.co/workspace/k12insight-mobile-customer~ce9fdec2-fec7-4492-83b2-10a4a4ffeea5/collection/30287875-ed92a661-a92f-4a8c-9141-3065d1939e5b?action=share&source=collection_link&creator=30287875"
+	},
+	"item": [
+		{
+			"name": "Resource_management",
+			"item": [
+				{
+					"name": "faq_kb",
+					"item": [
+						{
+							"name": "Beta",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namespace\":\"anagha1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://generativeaibeta.k12insight.com/generate-completeness-report",
+									"protocol": "https",
+									"host": [
+										"generativeaibeta",
+										"k12insight",
+										"com"
+									],
+									"path": [
+										"generate-completeness-report"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "pdf",
+					"item": [
+						{
+							"name": "BETA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret",
+										"value": "7e3018efef69537360eda657a07ad4500c52323764b6b3d85ad1a9a6f73cce7a"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ArticleIDs\" : [11152]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://generativeaibeta.k12insight.com/add-pdf",
+									"protocol": "https",
+									"host": [
+										"generativeaibeta",
+										"k12insight",
+										"com"
+									],
+									"path": [
+										"add-pdf"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "webpage",
+					"item": [
+						{
+							"name": "Live",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret",
+										"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ArticleIDs\" : [1791]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://generativeai.k12insight.com/add-webpage",
+									"protocol": "https",
+									"host": [
+										"generativeai",
+										"k12insight",
+										"com"
+									],
+									"path": [
+										"add-webpage"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Excel",
+					"item": [
+						{
+							"name": "beta",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret",
+										"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ArticleIDs\" :[1178]   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://generativeaibeta.k12insight.com/add-excel",
+									"protocol": "https",
+									"host": [
+										"generativeaibeta",
+										"k12insight",
+										"com"
+									],
+									"path": [
+										"add-excel"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Domain",
+					"item": [
+						{
+							"name": "QAUC",
+							"item": [
+								{
+									"name": "validate/abort",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "secret",
+												"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"main_corp_no\": 12317,\r\n    \"domain_url\": \"https://kc.k12insight.com/\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://generativeaibeta.k12insight.com/validate-domain",
+											"protocol": "https",
+											"host": [
+												"generativeaibeta",
+												"k12insight",
+												"com"
+											],
+											"path": [
+												"validate-domain"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "add/update/delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "secret",
+												"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"ArticleIDs\": [24739]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://generativeaibeta.k12insight.com/add-domain",
+											"protocol": "https",
+											"host": [
+												"generativeaibeta",
+												"k12insight",
+												"com"
+											],
+											"path": [
+												"add-domain"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "scan_progress",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "secret",
+												"value": "7e3018efef69537360eda657a07ad4500c52323764b6b3d85ad1a9a6f73cce7a"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"JobId\":\"2f8bcc40-a9d2-4617-acab-bb48cfb81578\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://generativeaibeta.k12insight.com/get-domain-progress",
+											"protocol": "https",
+											"host": [
+												"generativeaibeta",
+												"k12insight",
+												"com"
+											],
+											"path": [
+												"get-domain-progress"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Multi-delete",
+					"item": [
+						{
+							"name": "QAUC",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret",
+										"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"Article\": [10852], \r\n        \"Document\": {\r\n            \"PDF\": [],\r\n            \"XLSX\": []\r\n        },\r\n        \"Webpage\": [],\r\n        \"Website\": [],\r\n        \"Faqs\": []\r\n    }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://generativeaibeta.k12insight.com/delete-multi-resources",
+									"protocol": "https",
+									"host": [
+										"generativeaibeta",
+										"k12insight",
+										"com"
+									],
+									"path": [
+										"delete-multi-resources"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chatbot",
+			"item": [
+				{
+					"name": "BETA - ITSM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret",
+								"value": "7e3018efef69537360eda657a07ad4500c52323764b6b3d85ad1a9a6f73cce7a"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_input\": \"What is multilateralism ?\",\r\n    \"namespace\" : \"mcsd_india\",\r\n    \"profile_id\" : 242 \r\n    // 243,260\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "generativeaibetaitsm.k12insight.com/lt-chatbot-interaction",
+							"host": [
+								"generativeaibetaitsm",
+								"k12insight",
+								"com"
+							],
+							"path": [
+								"lt-chatbot-interaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chatbot_report",
+			"item": [
+				{
+					"name": "Beta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret",
+								"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"namespace\":\"mcsd_india\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://generativeaibeta.k12insight.com/generate-completeness-report",
+							"protocol": "https",
+							"host": [
+								"generativeaibeta",
+								"k12insight",
+								"com"
+							],
+							"path": [
+								"generate-completeness-report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dialogue-response",
+			"item": [
+				{
+					"name": "live",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret",
+								"value": "7e3018efef69537360eda657a07ad4500c52323764b6b3d85ad1a9a6f73cce7a"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_input\": \"What are the measures taken to counter racism\",\r\n    \"namespace\" : \"lt_k12insight\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://generativeaibeta.k12insight.com/lt-chatbot-interaction",
+							"protocol": "https",
+							"host": [
+								"generativeaibeta",
+								"k12insight",
+								"com"
+							],
+							"path": [
+								"lt-chatbot-interaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LTA Trends",
+			"item": [
+				{
+					"name": "BetaProd",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret",
+								"value": "9917245699c1e36b020a055960a1e4b68272d670705d221fb36239d1948d4394",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mainCorpNo\": 12317,\r\n    \"loginCorpNo\": 12317,\r\n    \"dateFilter\": 8,\r\n    \"timezoneDiff\": 0,\r\n    \"dtLang\": [1,2,3,4,5,6,7,8,9]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://generativeaibetaprod.k12insight.com/get-lta-ratings-trends",
+							"protocol": "https",
+							"host": [
+								"generativeaibetaprod",
+								"k12insight",
+								"com"
+							],
+							"path": [
+								"get-lta-ratings-trends"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LTA Dashboard",
+			"item": [
+				{
+					"name": "Beta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret",
+								"value": "7e3018efef69537360eda657a07ad4500c52323764b6b3d85ad1a9a6f73cce7a",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"corp_no\": 12015,\r\n    \"login_corp_no\": 0,\r\n    \"date_start\": \"2023-06-11\",\r\n    \"date_end\": \"2024-07-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://generativeaibeta.k12insight.com/get-lta-themes-data",
+							"protocol": "https",
+							"host": [
+								"generativeaibeta",
+								"k12insight",
+								"com"
+							],
+							"path": [
+								"get-lta-themes-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
